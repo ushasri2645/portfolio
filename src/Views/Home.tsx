@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { useSpring } from "@react-spring/web";
+import { animated, useSpring } from "@react-spring/web";
 import "../index.css";
 const Home = () => {
     const titles = [
@@ -12,9 +12,9 @@ const Home = () => {
     const props = useSpring({
         opacity: 1,
         transform: "translateX(0)",
-        from: { opacity: 0, transform: "translateX(-100%)" },
+        from: { opacity: 0, transform: "translateX(-5%)" },
         reset: true,
-        config: { duration: 3000 },
+        config: { duration: 1000 },
         onRest: () => {
             setIndex((index + 1) % titles.length);
         },
@@ -37,9 +37,12 @@ const Home = () => {
                         Usha Sri <br />
                         Gudikandula
                     </h1>
-                    <p className="text-black bg-blue-500 p-2 rounded max-w-max italic font-bold">
+                    {/* <p className="text-black bg-blue-500 p-2 rounded max-w-max italic font-bold">
                         {titles[index]}
-                    </p>
+                    </p> */}
+                    <animated.p className="text-black bg-blue-500 p-2 rounded max-w-max italic font-bold" style={props}>
+                    {titles[index]}
+                </animated.p>
                     <p className="text-gray-200  pt-5 md:pt-9 text-base md:text-lg">
                     I am a passionate individual with a keen interest in data science and software development. My journey in technology began with a curiosity to understand how data shapes our world.
                     </p>
