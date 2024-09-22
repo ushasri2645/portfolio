@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.nav-link {
+  @apply font-serif;
+}
+
+.nav-link:hover {
+  @apply cursor-pointer;
+}

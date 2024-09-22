@@ -1,0 +1,140 @@
+.contactUs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+  
+  }
+  
+  .contactContainer {
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+
+  }
+  
+  .contactTitle {
+    font-size: 4em;
+    margin-bottom: 20px;
+    text-align: center;
+    color: white;
+  }
+  
+  .contactNoEmail {
+    text-align: center;
+    color: white;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+  }
+  
+  .contactForm {
+    display: flex;
+    /* grid-template-columns: 1fr 2fr; */
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .leftSide,
+  .rightSide {
+    /* display: flex;
+    flex-direction: column; */
+    flex:1
+  }
+  
+  .leftSide{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  .rightSide {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  .formGroup {
+    margin-bottom: 15px;
+  }
+  
+  .formLabel {
+    display: block;
+    font-size: 1em;
+    margin-bottom: 5px;
+    color: white;
+  }
+  
+  .formInput,
+  .formTextarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+    /* height:auto; */
+  }
+  .formTextarea{
+    height: 230px;
+  }
+  
+  .formInput {
+    font-size: 1em;
+  }
+  
+  .formTextarea {
+    font-size: 1em;
+    min-height: 200px;
+  }
+  
+  .submitContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 20px;
+  }
+  
+  .submitButton {
+    background-image:linear-gradient(to right,lightblue, purple);
+    color: white;
+    border: none;
+    padding: 20px 35px;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+  }
+  
+  .submitButton:hover {
+    background-color: #0056b3;
+  }
+  
+  .successMessage {
+    margin-top: 10px;
+    color: #28a745;
+    font-size: 1em;
+    text-align: center;
+  }
+  
+  @media (max-width: 768px) {
+    .contactForm {
+      flex-direction: column;
+      flex-wrap: wrap;
+    }
+  
+    .leftSide,
+    .rightSide {
+      width: 100%;
+      min-width: 100%;
+    }
+  
+    .formGroup {
+      margin-bottom: 20px; /* More space between form groups on small screens */
+    }
+  
+    .formTextarea {
+      min-height: auto; /* Adjusted height for better fit on small screens */
+    }
+  }
