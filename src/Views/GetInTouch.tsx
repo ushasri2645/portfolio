@@ -52,7 +52,8 @@ const GetInTouch = () => {
                     phone: "",
                     message: "",
                 });
-                setSubmitted(true);
+                if(!submitted){
+                setSubmitted(true)};
             })
             .catch((error) => {
                 console.error("Error sending email:", error);
