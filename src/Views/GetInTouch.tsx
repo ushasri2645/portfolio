@@ -72,7 +72,7 @@ const GetInTouch = () => {
             </div>
             <div className="flex flex-row flex-wrap justify-center gap-x-28  gap-y-9 sm-gap-10 my-20">
                 <div className="flex flex-col items-center gap-2">
-                    <a href="tel:+6303961097"  >
+                    <a href="tel:6303961097"  >
                         <IoCallOutline color="33acff" size={45} />
                     </a>
                     <h1 className="text-white font-bold">Mobile</h1>
@@ -137,7 +137,7 @@ const GetInTouch = () => {
                     <div className="w-full h-1 bg-gray-500"></div>
                     <div className="w-3 h-3 border-2 border-white rounded-full bg-transparent"></div>
                 </div>
-                <div className="flex flex-wrap flex-row gap-2 justify-center">
+                <div className="flex flex-wrap flex-row gap-6 justify-center">
                     <TbSquareRoundedLetterU color="grey" size={65} />
                     <TbSquareRoundedLetterS color="grey" size={65} />
                     <TbSquareRoundedLetterH color="grey" size={65} />
