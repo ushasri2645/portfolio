@@ -10,7 +10,7 @@ const Certificates = () => {
     }, []);
 
     return (
-        <div className="flex flex-col gap-12 items-center h-full mt-20 px-4 md:px-8 lg:px-16">
+        <div className="flex flex-col gap-12 items-center min-h-screen  py-10  px-4 md:px-8 lg:px-16">
           <h1 className="text-white font-serif text-3xl font-extrabold">My Certifications</h1>
             {certificates.map((exp, index) => (
                 <div

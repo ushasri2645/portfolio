@@ -10,11 +10,11 @@ const Projects = () => {
     }, []);
 
     return (
-        <div className="flex flex-row flex-wrap text-white justify-center gap-[7%] font-serif">
+        <div className="flex flex-row flex-wrap text-white justify-center gap-10 font-serif mx-8 ">
             {projects.map((project, index) => (
                 <div
                     key={index}
-                    className={`flex flex-col items-center shadow-lg rounded-lg p-4 mb-6  w-full sm:w-[45%] lg:w-[30%]  bg-black gap-5 transition-all duration-300 
+                    className={`flex flex-col items-center shadow-lg rounded-lg p-4 mb-6   sm:w-[45%] md:mx-2 lg:w-[30%]  bg-black gap-5 transition-all duration-300 
                         ${loaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}
                         hover:scale-105 hover:bg-gray-600 hover:shadow-xl`} 
                     style={{

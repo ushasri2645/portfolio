@@ -2,11 +2,10 @@ import React from "react";
 
 const Education = () => {
     return (
-        <div className="flex flex-col h-screen ">
+        <div className="flex flex-col min-h-screen py-10 ">
             <div className="flex justify-center">
                 <div
-                    className="text-gray-500 font-serif font-extrabold"
-                    style={{ fontSize: 80 }}
+                    className="text-gray-500 font-serif font-extrabold  sm:text-3xl lg:text-9xl md:text-7xl "
                 >
                     2017-2024
                 </div>

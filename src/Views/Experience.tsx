@@ -10,7 +10,7 @@ const Experience = () => {
   }, []);
 
   return (
-    <div className="flex flex-col gap-12 min-h-screen items-center mt-10 px-4 md:px-8 lg:px-16">
+    <div className="flex flex-col gap-12 min-h-screen items-center  px-4 md:px-8 lg:px-16 py-10">
       {experiences.map((exp, index) => (
         <div
           key={index}

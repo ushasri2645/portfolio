@@ -1,7 +1,7 @@
 const AboutMe = () => {
     return (
-        <div className="flex flex-col md:flex-row justify-center gap-6 h-screen px-4">
-            <div className="flex flex-col my-10  md:my-24 gap-4 w-full md:w-1/2">
+        <div className="flex flex-col md:flex-row justify-center gap-6  py-10 px-4">
+            <div className="flex flex-col my-10  md:my-24 gap-4 w-full md:w-1/2 items-center">
                 <img
                     style={{ width: "100%", height: "auto" }}
                     className="rounded-3xl"

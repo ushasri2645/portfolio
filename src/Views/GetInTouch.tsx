@@ -61,7 +61,7 @@ const GetInTouch = () => {
             });
     };
     return (
-        <div className="py-10 flex flex-col">
+        <div className="py-10 flex flex-col min-h-screen">
             <div className="flex flex-col items-center">
                 <h1 className="text-white font-extrabold text-5xl">
                     GET IN TOUCH
@@ -70,26 +70,26 @@ const GetInTouch = () => {
                     Let's Work Together
                 </p>
             </div>
-            <div className="flex flex-row flex-wrap justify-evenly my-20">
+            <div className="flex flex-row flex-wrap justify-center gap-x-28  gap-y-9 sm-gap-10 my-20">
                 <div className="flex flex-col items-center gap-2">
-                    <a href="tel:+1234567890"  >
-                        <IoCallOutline color="33acff" size={100} />
+                    <a href="tel:+6303961097"  >
+                        <IoCallOutline color="33acff" size={45} />
                     </a>
                     <h1 className="text-white font-bold">Mobile</h1>
-                    <div>
+                    {/* <div>
                         <h4 className="text-gray-400">+91 6303961097</h4>
                         <h4 className="text-gray-400">+91 9849190455</h4>
-                    </div>
+                    </div> */}
                 </div>
                 <div className="flex flex-col items-center gap-2">
                     <a href="mailto:ushasrigudikandula456@gmail.com">
-                        <CiMail color="33acff" size={100} />
+                        <CiMail color="33acff" size={45} />
                     </a>
                     <p className="text-center text-white font-bold">Email</p>
                     <div>
-                        <h4 className="text-gray-500">
+                        {/* <h4 className="text-gray-500">
                             ushasrigudikandula456@gmail.com
-                        </h4>
+                        </h4> */}
                     </div>
                 </div>
                 <div className="flex flex-col items-center gap-2">
@@ -97,60 +97,60 @@ const GetInTouch = () => {
                         href="https://www.google.com/maps?q=17.9934,79.5347"
                          target="_blank" rel="noreferrer"
                     >
-                        <CiLocationOn color="33acff" size={100} />
+                        <CiLocationOn color="33acff" size={45} />
                     </a>
                     <p className="text-center text-white font-bold">Address</p>
-                    <div>
+                    {/* <div>
                         <p className="text-gray-500">SBH Colony, Subedari </p>
                         <p className="text-gray-500">Warangal, Telangana </p>
-                    </div>
+                    </div> */}
                 </div>
                 <div className="flex flex-col items-center gap-2">
                     <a href="https://github.com/USHASRI1112" target="_blank" rel="noreferrer">
-                        <FiGithub color="33acff" size={100} />
+                        <FiGithub color="33acff" size={45} />
                     </a>
                     <p className="text-center text-white font-bold">Github</p>
-                    <div>
+                    {/* <div>
                         <h4 className="text-gray-500">ID: USHASRI1112</h4>
-                    </div>
+                    </div> */}
                 </div>
                 <div className="flex flex-col items-center gap-2">
                     <a
                         href="https://www.linkedin.com/in/usha-sri-gudikandula"
                         target="_blank" rel="noreferrer"
                     >
-                        <CiLinkedin color="33acff" size={100} />
+                        <CiLinkedin color="33acff" size={45} />
                     </a>
                     <p className="text-center text-white font-bold">
                         Linked In
                     </p>
-                    <div>
+                    {/* <div>
                         <h4 className="text-gray-500">
                             usha-sri-gudikandula456
                         </h4>
-                    </div>
+                    </div> */}
                 </div>
             </div>
             <div>
-                <div className="flex flex-row items-center mx-28">
+                <div className="flex flex-row items-center mx-10">
                     <div className="w-3 h-3 border-2 border-white rounded-full bg-transparent"></div>
                     <div className="w-full h-1 bg-gray-500"></div>
                     <div className="w-3 h-3 border-2 border-white rounded-full bg-transparent"></div>
                 </div>
                 <div className="flex flex-wrap flex-row gap-2 justify-center">
-                    <TbSquareRoundedLetterU color="grey" size={100} />
-                    <TbSquareRoundedLetterS color="grey" size={100} />
-                    <TbSquareRoundedLetterH color="grey" size={100} />
-                    <TbSquareRoundedLetterA color="grey" size={100} />
-                    <TbSquareRoundedLetterS color="grey" size={100} />
-                    <TbSquareRoundedLetterR color="grey" size={100} />
-                    <TbSquareRoundedLetterI color="grey" size={100} />
+                    <TbSquareRoundedLetterU color="grey" size={65} />
+                    <TbSquareRoundedLetterS color="grey" size={65} />
+                    <TbSquareRoundedLetterH color="grey" size={65} />
+                    <TbSquareRoundedLetterA color="grey" size={65} />
+                    <TbSquareRoundedLetterS color="grey" size={65} />
+                    <TbSquareRoundedLetterR color="grey" size={65} />
+                    <TbSquareRoundedLetterI color="grey" size={65} />
                 </div>
-                <div className="flex flex-row items-center mx-28">
+                <div className="flex flex-row items-center mx-10">
                     <div className="w-3 h-3 border-2 border-white rounded-full bg-transparent"></div>
-                    <div className="w-dvw h-1 bg-gray-500 mr-1"></div>
+                    <div className="w-dvw sm-w-full h-1 bg-gray-500 mr-1"></div>
                     <div className=" text-gray-500">PortFolio 2024</div>
-                    <div className="w-dvw h-1 bg-gray-500 ml-1"></div>
+                    <div className="w-dvw sm-w-full h-1 bg-gray-500 ml-1"></div>
                     <div className="w-3 h-3 border-2 border-white rounded-full bg-transparent"></div>
                 </div>
             </div>

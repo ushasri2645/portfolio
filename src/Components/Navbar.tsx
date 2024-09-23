@@ -18,13 +18,13 @@ const Navbar = () => {
         </button>
       </div>
       <div className={`flex-col md:flex-row md:flex md:items-center gap-4 ${isOpen ? 'flex' : 'hidden'} md:flex`}>
-    <NavLink  to='/home' className={({isActive})=>`nav-link ${isActive? 'bg-blue-500 p-2 rounded text-black font-bold':'text-white'}`} >Home</NavLink>
-    <NavLink to='/about' className={({isActive})=>`${isActive? 'bg-blue-500 p-2 rounded text-black font-bold':'text-white'} nav-link`}>About Me</NavLink>
-    <NavLink to='/education' className={({isActive})=>`${isActive? 'bg-blue-500 p-2 rounded text-black font-bold':'text-white'} nav-link`}>Education</NavLink> 
-    <NavLink to='/projects' className={({isActive})=>`${isActive? 'bg-blue-500 p-2 rounded text-black font-bold':'text-white'} nav-link`}>Projects</NavLink>
-    <NavLink to= '/experience' className={({isActive})=>`${isActive? 'bg-blue-500 p-2 rounded text-black font-bold':'text-white'} nav-link`}>Experience</NavLink>
-    <NavLink to='/certificates' className={({isActive})=>`${isActive? 'bg-blue-500 p-2 rounded text-black font-bold':'text-white'} nav-link`}>Certificates</NavLink>
-    <NavLink to='/contact' className={({isActive})=>`${isActive? 'bg-blue-500 p-2 rounded text-black font-bold':'text-white'} nav-link`}>Get In Touch</NavLink>
+    <NavLink  onClick={toggleMenu} to='/home' className={({isActive})=>`nav-link  ${isActive? 'bg-blue-500 p-2 rounded text-black font-bold':'text-white'}`} >Home</NavLink>
+    <NavLink onClick={toggleMenu} to='/about' className={({isActive})=>`${isActive? 'bg-blue-500 p-2 rounded text-black font-bold':'text-white'} nav-link`}>About Me</NavLink>
+    <NavLink onClick={toggleMenu} to='/education' className={({isActive})=>`${isActive? 'bg-blue-500 p-2 rounded text-black font-bold':'text-white'} nav-link`}>Education</NavLink> 
+    <NavLink onClick={toggleMenu} to='/projects' className={({isActive})=>`${isActive? 'bg-blue-500 p-2 rounded text-black font-bold':'text-white'} nav-link`}>Projects</NavLink>
+    <NavLink onClick={toggleMenu} to= '/experience' className={({isActive})=>`${isActive? 'bg-blue-500 p-2 rounded text-black font-bold':'text-white'} nav-link`}>Experience</NavLink>
+    <NavLink onClick={toggleMenu} to='/certificates' className={({isActive})=>`${isActive? 'bg-blue-500 p-2 rounded text-black font-bold':'text-white'} nav-link`}>Certificates</NavLink>
+    <NavLink onClick={toggleMenu} to='/contact' className={({isActive})=>`${isActive? 'bg-blue-500 p-2 rounded text-black font-bold':'text-white'} nav-link`}>Get In Touch</NavLink>
   </div>
   </nav>
   )
